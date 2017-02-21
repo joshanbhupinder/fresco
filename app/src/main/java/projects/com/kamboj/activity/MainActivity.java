@@ -15,7 +15,6 @@ import android.widget.GridView;
 import android.widget.ImageView;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
-import com.openkey.sdk.SDK;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +28,7 @@ import projects.com.kamboj.adapter.PicasoAdapter;
 import projects.com.kamboj.model.StudentModel;
 
 
-public class MainActivity extends AppCompatActivity implements SDK {
+public class MainActivity extends AppCompatActivity {
 
 
     List<StudentModel> studentModels = new ArrayList<>();
@@ -136,23 +135,5 @@ public class MainActivity extends AppCompatActivity implements SDK {
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
     }
 
-    @Override
-    public void setupFailure(String s) {
 
-    }
-
-    @Override
-    public void setupSuccess() {
-
-    }
-
-    @Override
-    public void stopScan(boolean b) {
-
-    }
-
-    @Override
-    public void isKeyAvailable(boolean b) {
-
-    }
 }
